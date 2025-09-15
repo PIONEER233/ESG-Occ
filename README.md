@@ -4,10 +4,10 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/yourname/ESG-Occ?style=social)](https://github.com/yourname/ESG-Occ)
 
-Official PyTorch implementation of **"ESG-Occ: Efficiency-First Satellite-Ground Fusion for 3D Occupancy Prediction"**, accepted to *ICASSP 2025* 🎉.  
+Official PyTorch implementation of **"ESG-Occ: Efficiency-First Satellite-Ground Fusion for 3D Occupancy Prediction"**.  
 
 <div align="center">
-  <img src="assets/framework.png" width="80%">
+  <img src="figures/framework.png" width="80%">
   <p><i>Overall framework of ESG-Occ. Our EfficientSatNet extracts lightweight overhead features, while the Adaptive Weight Generation Block (AWGB) fuses them with street-view BEV features in a scene- and visibility-aware manner.</i></p>
 </div>
 
@@ -19,7 +19,7 @@ Official PyTorch implementation of **"ESG-Occ: Efficiency-First Satellite-Ground
 - **Adaptive Fusion**: Propose **AWGB** that dynamically balances street-view vs. satellite contributions using:
   - ProbNet (visibility-aware weighting)  
   - Complexity-aware modulation  
-- **Real-Time Ready**: Achieves **64.23 ms/frame** on RTX 4090 while improving mIoU by +1.4% over heavy fusion baselines.
+- **Real-Time Ready**: Achieves **64.23 ms/frame** on RTX 4090. Experiments on the Occ3D-nuScenes benchmark show that ESG-Occ delivers competitive accuracy with significant efficiency gains, lowering computational overhead by 15.6%.
 - **Open & Reproducible**: Code, configs, and pretrained models are publicly released.
 
 ---
@@ -28,11 +28,11 @@ Official PyTorch implementation of **"ESG-Occ: Efficiency-First Satellite-Ground
 
 | Method        | FLOPs (G) | Latency (ms) | mIoU (%) |
 |---------------|-----------|--------------|----------|
-| SGFormer      | 442.19    | 87.13        | 37.95    |
-| SA-Occ        | 454.02    | 91.76        | 38.61    |
+| FlashOcc      | 248.57    | 60.70        | 32.08    |
+| SA-Occ        | 442.19    | 65.88        | 39.03   |
 | **ESG-Occ**   | **373.06**| **64.23**    | **39.38**|
 
-*Measured on NVIDIA RTX 4090, batch size 1.*
+*Measured on NVIDIA RTX 4090.*
 
 ---
 
@@ -102,8 +102,8 @@ python tools/demo.py --cfg configs/esgocc.yaml \
 ## 📸 Visualization
 
 <div align="center">
-  <img src="assets/vis_results.png" width="80%">
-  <p><i>Qualitative comparison of ESG-Occ vs. baselines. Satellite cues help recover occluded regions and far-range occupancy.</i></p>
+  <img src="figures/vis.png" width="80%">
+  <p><i>Qualitative comparison of ESG-Occ vs. baselines. Visual comparison with baselines indicates that ESG-Occ produces more distinct boundary delineation and sustains robustness in heavily occluded regions.</i></p>
 </div>
 
 ---
@@ -140,11 +140,10 @@ If you find this work useful, please cite our paper:
 
 ## 📬 Contact
 
-For questions or issues, feel free to open an [issue](https://github.com/yourname/ESG-Occ/issues) or contact **[your.email@domain.com](mailto:your.email@domain.com)**.
+For questions or issues, feel free to open an [issue](https://github.com/PIONEER233/ESG-Occ/issues) or contact **[your.email@domain.com](mailto:your.email@domain.com)**.
 
 ---
 
 ## 📜 License
 
 This project is released under the [MIT License](LICENSE).
-
