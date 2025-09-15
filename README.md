@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/yourname/ESG-Occ?style=social)](https://github.com/yourname/ESG-Occ)
 
-Official PyTorch implementation of **"ESG-Occ: Efficient Satellite–Ground Fusion for Real-Time 3D Occupancy Prediction"**, accepted to *ICASSP 2025* 🎉.  
+Official PyTorch implementation of **"ESG-Occ: Efficiency-First Satellite-Ground Fusion for 3D Occupancy Prediction"**, accepted to *ICASSP 2025* 🎉.  
 
 <div align="center">
   <img src="assets/framework.png" width="80%">
