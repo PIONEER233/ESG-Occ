@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ## 📂 Dataset Preparation
 
-We follow [Occ3D](https://github.com/Tsinghua-MARS-Lab/Occ3D) for data preparation.
+We follow [SA-Occ](https://github.com/chenchen235/SA-Occ) for data preparation.
 
 1. Download **nuScenes** dataset and corresponding **Occ3D annotations**.
 2. Organize files as:
