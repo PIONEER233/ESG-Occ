@@ -38,6 +38,8 @@ Official PyTorch implementation of **"ESG-Occ: Efficiency-First Satellite-Ground
 
 ## 🚀 Installation
 
+We will release the code soon
+
 ```bash
 # clone repo
 git clone https://github.com/yourname/ESG-Occ.git
@@ -72,30 +74,6 @@ datasets/
 3. Update dataset paths in `configs/dataset.yaml`.
 
 ---
-
-## 🏃 Training & Evaluation
-
-### Train from scratch
-
-```bash
-python tools/train.py --cfg configs/esgocc.yaml
-```
-
-### Evaluate pretrained model
-
-```bash
-python tools/test.py --cfg configs/esgocc.yaml \
-                     --ckpt checkpoints/esgocc_pretrained.pth
-```
-
-### Inference demo
-
-```bash
-python tools/demo.py --cfg configs/esgocc.yaml \
-                     --ckpt checkpoints/esgocc_pretrained.pth \
-                     --input data/demo/ \
-                     --output results/demo/
-```
 
 ---
 
