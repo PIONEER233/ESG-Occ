@@ -128,10 +128,10 @@ ESG-Occ/
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{yourname2025esgocc,
+@inproceedings{huangxianpeng2025esgocc,
   title     = {ESG-Occ: Efficient Satellite–Ground Fusion for Real-Time 3D Occupancy Prediction},
-  author    = {Your Name and Others},
-  booktitle = {ICASSP},
+  author    = {Huang, Xianpeng and Li,Jian},
+  booktitle = {ICICML},
   year      = {2025}
 }
 ```
@@ -140,7 +140,7 @@ If you find this work useful, please cite our paper:
 
 ## 📬 Contact
 
-For questions or issues, feel free to open an [issue](https://github.com/PIONEER233/ESG-Occ/issues) or contact **[your.email@domain.com](mailto:your.email@domain.com)**.
+For questions or issues, feel free to open an [issue](https://github.com/PIONEER233/ESG-Occ/issues) or contact **[huangxianpeng24@nudt.edu.cn](mailto:huangxianpeng24@nudt.edu.cn)**.
 
 ---
 
